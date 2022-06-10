@@ -1,7 +1,10 @@
 #board{
-
+    align-items: center;
+justify-content:center;
+height: 120px;
+width: 120px;
     display: grid;
-    
+    gap: 30px;
     grid-template-columns: 20px;
     grid-template-rows: 20px;
     

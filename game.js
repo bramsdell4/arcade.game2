@@ -24,6 +24,16 @@ const gameState = {
     //check if 3 same values in a column
     //check if 3 same values in diaganal directions
 //reset button
+
+
+
+
+
+
+//every turn it needs to checkWinner if there is no winner move on to drawFunction to draw player choice
+
+
+
 function playerTurn (){
   for (let i = 0; i < gameState.players; i++){//loop through players
     let current = gameState.players[i];
@@ -64,6 +74,8 @@ function drawFunction(){
   if(gameState.players[1]){
     playBox.innerText("O")
   }
+  //if playBox contains an x value, value can not be changed
+  //if playBox contains a y value, value can not be changed
 
   
 }
