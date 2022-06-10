@@ -46,11 +46,11 @@ rows
 [0,1,2] or
 [3,4,5] or
 [6,7,8]
-columns
+columns or
 [0,3,6] or
 [1,4,7] or
 [2,5,8]
-diaganal
+diaganal or
 [0,4,8] or
 [2,4,6]*/
 }
