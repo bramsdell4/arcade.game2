@@ -64,15 +64,16 @@ diaganal or
 [0,4,8] or
 [2,4,6]*/
 }
-
+let submit = document.getElementById("enterButton");
 let playBox = document.getElementsByClassName("box");
-playBox.addEventLisener('click', drawFunction());//event listener that is supposed to display an X or O depeding on whose turn it is
+playBox.addEventListener('click', drawFunction());//event listener that is supposed to display an X or O depeding on whose turn it is
+submit.addEventListener('click', addPlayer)
 function drawFunction(){
   if(gameState.players[0]){
-    playBox.innerText("X");// could this also be .innerHTML <p> X </p>
+    playBox.innerHTML = <p> "X" </p>
   }
   if(gameState.players[1]){
-    playBox.innerText("O")
+    playBox.innerHTML = <p> "O" </p>
   }
   //if playBox contains an x value, value can not be changed
   //if playBox contains a y value, value can not be changed
@@ -81,3 +82,6 @@ function drawFunction(){
 }
 
 
+function addPlayer(){
+//adds text written in input field to gameState.players
+}
