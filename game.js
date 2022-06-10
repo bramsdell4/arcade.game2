@@ -15,3 +15,6 @@ const gameState = {
     //check if 3 same values in a column
     //check if 3 same values in diaganal directions
 //reset button
+for(let i = 0; i < gameState.board.length; i++){
+  let square = gameState.board[i];
+}
